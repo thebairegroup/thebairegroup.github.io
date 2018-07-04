@@ -1,0 +1,56 @@
+@import 'variables';
+@import 'breakpoints';
+@import 'gutters';
+
+.responsive-container {
+  padding-bottom: 50px;
+}
+
+.mailbox-container {
+  @include breakpoint(mediumAndAbove) {
+    padding-right: 60px !important;
+  }
+}
+
+.mailbox {
+	width: 50%;
+	display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  @include breakpoint(mediumAndAbove) {
+    width: 100%;
+    float: right;
+    margin: 0;
+  }
+}
+
+input[type=text], textarea {
+    width: 100%;
+    display: block;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 0px solid black;
+    background-color: #F6F6F6;
+}
+
+textarea {
+  resize: none;
+}
+
+.submitButton {
+  width: 100%;
+}
+
+.error {
+  color: #D0011B;
+}
+
+.success {
+  color: #7FC881;
+}
+
+.feedback-area * {
+  text-align: center;
+}

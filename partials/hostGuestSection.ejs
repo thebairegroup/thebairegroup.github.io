@@ -1,0 +1,18 @@
+<section class="host-guest-section <%- offWhite ? 'off-white-bg' : '' %>">
+  <img src="<%- imageSource %>" alt="<%- imageAlt %>" />
+  <h2 class="title-1"><%= title %></h2>
+  <div class="host-section">
+    <h3>For Hosts</h3>
+    <img class="spacer-line" src="/assets/blue_line.svg" alt="" />
+    <p>
+      <%= hostSection %>
+    </p>
+  </div>
+  <div class="guest-section">
+    <h3>For Guests</h3>
+    <img class="spacer-line" src="/assets/blue_line.svg" alt="" />
+    <p>
+      <%= guestSection %>
+    </p>
+  </div>
+</section>
